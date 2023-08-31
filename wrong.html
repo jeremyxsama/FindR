@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      body {
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: skyblue;
+        font-family: sans-serif;
+      }
+      h1 {
+        margin-right: 10px;
+      }
+      a {
+        text-decoration: none;
+        background-color: rgb(17, 44, 165);
+        padding: 20px;
+        color: white;
+        border-radius: 5px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Restaurant Couldn't Be Added, You Will Be Redirected Shortly</h1>
+    <a href="index.html">Go Back</a>
+    <script>
+      function redirect() {
+        location.assign("index.html");
+      }
+
+      setTimeout(redirect, 4200);
+    </script>
+  </body>
+</html>

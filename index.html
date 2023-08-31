@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/css/style.css" />
+    <title>FindR | Find Restaurants In Your City 📍</title>
+    <script defer src="src/js/controller.js"></script>
+  </head>
+
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>FindR</h1>
+        <form class="x">
+          <input
+            type="search"
+            class="input input--search"
+            placeholder="Find Over 1M Restaurants..."
+            required
+          />
+          <button class="btn btn--search">Search</button>
+        </form>
+
+        <button class="btn btn--open-modal">Add Restaurant</button>
+      </header>
+      <main class="main">
+        <div class="section-one">
+          <!-- <a href="#1">Hello</a>
+          <a href="#2">Hello</a> -->
+          <!-- <a href="#" class="list">
+            <figure>
+              <img src="src/img/two.jpeg" />
+            </figure>
+            <figcaption>Yummy</figcaption>
+          </a> -->
+          <!-- <div class="paginate">
+            <button class="left btn hidden">&larr;</button>
+            <button class="right btn hidden">&rarr;</button>
+          </div> -->
+        </div>
+
+        <div class="section-two">
+          <h1 class="center">start by searching for a city...</h1>
+          <!-- <h1 class="center">we are working on adding more cities. try searching for another one</h1> -->
+          <!-- <img src="src/img/test.jpeg" alt="Restaurant Image" class="bg-img" />
+          <div class="bg">
+            <h1>Name</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro,
+              soluta facilis itaque expedita voluptates quaerat nemo ab iusto
+              voluptatum error aut placeat, atque provident blanditiis quae
+              voluptas facere dolore quas.
+            </p>
+            <p>City</p>
+            <p>
+              Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore
+              modi rerum consequatur sint, minima quas animi ipsum ipsa
+              inventore ut et assumenda, alias quo. Quod deserunt voluptas ut
+              magni esse?
+            </p>
+            <a href="#">Website</a>
+          </div> -->
+        </div>
+      </main>
+
+      <div class="modal hidden">
+        <button class="btn--close-modal">&times;</button>
+        <form method="post" action="form.php">
+          <input
+            type="text"
+            placeholder="Name"
+            class="input input--modal"
+            name="name"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Address"
+            class="input input--modal"
+            name="address"
+            required
+          />
+          <input
+            type="text"
+            placeholder="City"
+            class="input input--modal"
+            name="city"
+            required
+          />
+          <textarea
+            class="input input--modal"
+            placeholder="About"
+            name="about"
+            required
+          ></textarea>
+          <input
+            type="text"
+            placeholder="Website"
+            value="https://yummy.com"
+            class="input input--modal"
+            name="website"
+            required
+          />
+          <input
+            type="text"
+            placeholder="Image URL"
+            class="input input--modal"
+            name="image_url"
+            required
+          />
+          <div class="center">
+            <button class="btn btn--submit" name="submit">Submit &uarr;</button>
+          </div>
+        </form>
+      </div>
+      <div class="overlay hidden"></div>
+    </div>
+    <script src="src/js/script.js"></script>
+  </body>
+</html>
